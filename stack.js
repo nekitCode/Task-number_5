@@ -10,7 +10,7 @@ class Stack {
     }
 
     constructor(maxSize) {
-        if (!isValidNumber) throw new Error("is not number");
+        if (!isValidNumber(maxSize)) throw new Error("is not number");
         this.data = [];
         this.top = -1;
         this.maxSise = maxSize;
